@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 min-h-screen;
+}
+
+a {
+  @apply text-pinterest hover:text-pinterest-light transition-colors;
+}
+
+input,
+select,
+textarea {
+  @apply bg-slate-900 border border-slate-700 text-slate-100 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pinterest focus:border-transparent;
+}
+
+button {
+  @apply bg-pinterest hover:bg-pinterest-dark text-white font-medium rounded-md px-4 py-2 transition-colors;
+}
+
+button:disabled {
+  @apply opacity-60 cursor-not-allowed;
+}
